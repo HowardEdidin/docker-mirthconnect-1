@@ -32,6 +32,8 @@ EXPOSE 3000
 # Mirth (Direct)
 EXPOSE 80 443
 
+EXPOSE 8080 8443
+
 # 10 unmapped channels
 EXPOSE 9661-9670
 
