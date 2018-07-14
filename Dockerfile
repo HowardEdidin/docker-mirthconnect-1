@@ -24,7 +24,7 @@ WORKDIR /opt/mirthconnect
 RUN apt-get update && apt-get install -y netcat && \
   rm -rf /var/lib/apt/lists/*
 
-COPY templates/conf/mirth.properties /opt/mirthconnect/conf/mirth.properties
+COPY mirth.properties /opt/mirthconnect/conf/
 
 # NGiNX (X-Forwarded-Proto Proxy)
 EXPOSE 3000
